@@ -2,13 +2,14 @@ import { View, Text, TextInput, TouchableOpacity, Alert } from 'react-native';
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { StyleSheet } from 'react-native';
-import { login } from '../redux/slice/authSlice';
+//import { login } from '../redux/slice/authSlice';
 const LoginFoam = () => {
   const dispatch = useDispatch();
 
   const [email, setemail] = useState('');
   const [password, setpassword] = useState('');
   const { user } = useSelector((state: any) => state.auth);
+
   const handleLogin = () => {
     // Alert.alert('Email', email);
     // Alert.alert('Password', password);
